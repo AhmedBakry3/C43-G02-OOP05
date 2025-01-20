@@ -14,11 +14,11 @@ namespace Assignment_Session_5_OOP
 
             //Creating Instance of Circle Class
             Circle circle = new Circle() { Radius = 10 };
-            Console.WriteLine($"Area of Circle = {circle.DisplayShapeInfo()}"); //Area of Circle = 314.1592653589793
+            circle.DisplayShapeInfo();//Circle: Radius = 10, Area = 314.1592653589793
 
             //Creating Instance of Rectangle Class
             Rectangle rectangle = new Rectangle() { Length = 10, Width = 20 };
-            Console.WriteLine($"Area of Rectangle = {rectangle.DisplayShapeInfo()}"); //Area of Rectangle = 200
+            rectangle.DisplayShapeInfo(); //Rectangle: Length = 10, Width = 20, Area = 200
             #endregion
 
             #region Question 2

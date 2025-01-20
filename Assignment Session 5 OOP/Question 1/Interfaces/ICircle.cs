@@ -2,5 +2,7 @@
 {
     internal interface ICircle : IShape
     {
+        //Signature For Propety
+        double Radius { get; set; }
     }
 }

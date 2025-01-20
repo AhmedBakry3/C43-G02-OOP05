@@ -3,9 +3,8 @@
     internal interface IShape
     {
         //Signature For Propety
-        public double Area {  get; set; }
-
+        double Area { get; }
         //signature For Method
-        public double DisplayShapeInfo();
+        public void DisplayShapeInfo();
     }
 }

@@ -5,14 +5,20 @@ namespace Assignment_Session_5_OOP.Classes
 {
     internal class Rectangle : IRectangle
     {
-        public double Area { get; set; }
         public double Length { get; set; }
         public double Width { get; set; }
-
-        public double DisplayShapeInfo()
+        public double Area
         {
-            Area = Length * Width;
-            return Area;
+            get
+            {
+                return Length * Width;
+            }
+        }
+
+        public void DisplayShapeInfo()
+        {
+            Console.WriteLine($"Rectangle: Length = {Length}, Width = {Width}, Area = {Area}");
+
         }
     }
 }

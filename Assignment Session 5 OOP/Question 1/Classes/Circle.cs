@@ -4,14 +4,20 @@ namespace Assignment_Session_5_OOP.Classes
 {
     internal class Circle : ICircle
     {
-        public double Area { get; set; }
         public double Radius { get; set; }
 
-
-        public double DisplayShapeInfo()
+        public double Area
         {
-            Area = (Math.PI * Math.Pow(Radius, 2));
-            return Area;
+            get
+            {
+                return Math.PI * Radius * Radius; 
+            }
+        }
+
+        public void DisplayShapeInfo()
+        {
+          Console.WriteLine($"Circle: Radius = {Radius}, Area = {Area}");
+
         }
     }
 }
